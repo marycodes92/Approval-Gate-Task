@@ -1,11 +1,3 @@
-# =============================================================================
-# ROLLBACK WORKFLOW - Manual Trigger
-# =============================================================================
-# Use when: QA/Testers find bugs after deployment
-# How to use: Actions → "Rollback Deployment" → Select environment → Run
-# Uses USERNAME + PASSWORD authentication
-# =============================================================================
-
 name: 🔙 Rollback Deployment
 
 on:

@@ -1,15 +1,3 @@
-# =============================================================================
-# LESSON 3: Continuous Deployment to PRODUCTION
-# =============================================================================
-# Manual trigger only - requires confirmation
-# Uses USERNAME + PASSWORD authentication (simpler for training)
-#
-# REQUIREMENTS (GitHub Secrets):
-#   - PROD_VM_HOST: IP address of production VM
-#   - PROD_VM_USER: Username (e.g., azureuser)
-#   - PROD_VM_PASSWORD: Password for the user
-# =============================================================================
-
 name: Deploy to Production
 
 on:
@@ -48,15 +36,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
       - name: Run tests
         run: pytest tests/ -v --tb=short
 
@@ -70,10 +55,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
-
       - name: Create deployment package
         run: |
           mkdir -p deploy_package

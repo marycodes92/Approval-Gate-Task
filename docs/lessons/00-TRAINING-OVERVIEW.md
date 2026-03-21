@@ -2,7 +2,6 @@
 
 ## Training Overview
 
-This training will take students from zero to deploying applications using CI/CD pipelines with GitHub Actions and Azure VMs.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
