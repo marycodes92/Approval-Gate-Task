@@ -146,3 +146,5 @@ This project is based on [Azure Samples Flask Quickstart](https://github.com/Azu
 ## License
 
 MIT License - Use freely for educational purposes.
+
+Testing the Approval gate change
