@@ -34,7 +34,7 @@ jobs:
         run: |
           sshpass -e scp -o StrictHostKeyChecking=no \
             deploy.tar.gz \
-            ${{ secrets.STAGING_VM_USER }}@${{ secrets.STAGING_VM_HOST }}:/tmp/
+            ${{ secrets.STAGING_VM_USER }}@${{ secrets.STAGING_VM_IP }}:/tmp/
       - name: Deploy application on Staging VM
         env:
           SSHPASS: ${{ secrets.STAGING_VM_PASSWORD }}
