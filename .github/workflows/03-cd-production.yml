@@ -149,3 +149,4 @@ jobs:
           echo "- **Version:** ${{ github.event.inputs.version_tag }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Deployed by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
           echo "- **URL:** http://${{ secrets.PROD_VM_HOST }}:5000" >> $GITHUB_STEP_SUMMARY
+# Added github secret
