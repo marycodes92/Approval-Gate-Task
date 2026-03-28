@@ -40,7 +40,7 @@ jobs:
           SSHPASS: ${{ secrets.STAGING_VM_PASSWORD }}
         run: |
           sshpass -e ssh -o StrictHostKeyChecking=no \
-            ${{ secrets.STAGING_VM_USER }}@${{ secrets.IP }} << 'DEPLOY_SCRIPT'
+            ${{ secrets.STAGING_VM_USER }}@${{ secrets.STAGING_VM_IP }} << 'DEPLOY_SCRIPT'
 
             set -e
 
